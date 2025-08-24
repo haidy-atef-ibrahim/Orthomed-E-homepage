@@ -549,6 +549,48 @@
             line-height: 1.8;
         }
 
+         .certifications {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cert-badge {
+    background-color: #d72638; 
+    color: #fff;
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;  /* الوجو فوق*/
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.cert-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    filter: brightness(0) invert(1); /* اللوجو بالابيض*/
+    margin-bottom: 10px;
+}
+
+.cert-text {
+    text-align: center;
+    font-size: 14px;
+}
+
+        .cert-logo {
+    width: 50px;           /* حجم موحّد */
+    height: 50px;          /* نفس الطول والعرض */
+    object-fit: contain;   /*  نسبة أبعاد الصورة */
+    margin-bottom: 10px;   /* مسافة بين الصورة والنص */
+    display: block;        /*  Block Element */
+        }
+        
+/*
         .certifications {
             display: flex;
             justify-content: center;
@@ -569,7 +611,7 @@
             font-weight: bold;
             box-shadow: 0 8px 25px rgba(44, 90, 160, 0.3);
         }
-
+*/
         /* Contact Section */
         .contact {
             padding: 80px 0;
@@ -838,12 +880,19 @@
                 <p>Our comprehensive portfolio of Orthopedic Implants and Instruments numbers over a thousand products, each manufactured to the highest international standards with rigorous quality control procedures.</p>
                 
                 <div class="certifications">
-                    <div class="cert-badge">ISO 13485</div>
-                    <div class="cert-badge">
-                    <img src="https://www.flaticon.com/free-icon/iso-certificate_16985608?term=iso&page=1&position=30&origin=search&related_id=16985608" alt="ISO 13485 Logo" class="cert-logo">
-                    <div class="cert-badge">CE Mark</div>
-                    <div class="cert-badge">GMP</div>
-                </div>
+    <div class="cert-badge">
+        <img src="images/iso-certificate.png" alt="ISO 13485 Logo" class="cert-logo">
+        <div>ISO 13485</div>
+    </div>
+    <div class="cert-badge">
+        <img src="images/badge.png" alt="CE Mark Logo" class="cert-logo">
+        <div>CE Mark</div>
+    </div>
+    <div class="cert-badge">
+        <img src="images/verified.png" alt="GMP Logo" class="cert-logo">
+        <div>GMP</div>
+             </div>
+               </div>
             </div>
         </div>
     </section>
@@ -961,6 +1010,7 @@
 </body>
 
 </html>
+
 
 
 
